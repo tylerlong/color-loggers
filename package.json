@@ -3,9 +3,10 @@
   "name": "color-loggers",
   "version": "0.1.0",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "ts-node src/test.ts",
-    "prepublishOnly": "tsc src/index.ts --outDir lib"
+    "prepublishOnly": "tsc src/index.ts --declaration --outDir lib"
   },
   "devDependencies": {
     "@types/node": "^18.14.4",
