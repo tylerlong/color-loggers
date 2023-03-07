@@ -13,7 +13,7 @@ yarn add color-loggers
 ## Use
 
 ```ts
-import {Blue, Green, Red} from './index';
+import {Blue, Green, Red} from 'color-loggers';
 
 const info = new Blue();
 const success = new Green();
