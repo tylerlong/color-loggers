@@ -2,18 +2,16 @@
 
 Print to console with colors.
 
-
 ## Install
 
 ```
 yarn add color-loggers
 ```
 
-
 ## Use
 
 ```ts
-import {Blue, Green, Red} from 'color-loggers';
+import { Blue, Green, Red } from 'color-loggers';
 
 const info = new Blue();
 const success = new Green();
@@ -41,7 +39,6 @@ error.log('Something is wrong!');
 ```
 
 ![](./img/2.png)
-
 
 ## Dynamic prefix
 

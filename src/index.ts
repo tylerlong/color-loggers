@@ -1,15 +1,15 @@
 type Prefix = string | (() => string);
 
 class Color {
-  color: string;
-  prefix: Prefix;
+  public color: string;
+  public prefix: Prefix;
 
-  constructor(color: string, prefix: Prefix = '') {
+  public constructor(color: string, prefix: Prefix = '') {
     this.color = color;
     this.prefix = prefix;
   }
 
-  log(message: string) {
+  public log(message: string) {
     let prefix = this.prefix;
     if (prefix instanceof Function) {
       prefix = prefix();
@@ -19,19 +19,19 @@ class Color {
 }
 
 export class Blue extends Color {
-  constructor(prefix: Prefix = '[Info]:') {
+  public constructor(prefix: Prefix = '[Info]:') {
     super('\x1b[34m', prefix);
   }
 }
 
 export class Green extends Color {
-  constructor(prefix: Prefix = '[Done]:') {
+  public constructor(prefix: Prefix = '[Done]:') {
     super('\x1b[32m', prefix);
   }
 }
 
 export class Red extends Color {
-  constructor(prefix: Prefix = '[Error]:') {
+  public constructor(prefix: Prefix = '[Error]:') {
     super('\x1b[31m', prefix);
   }
 }

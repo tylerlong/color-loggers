@@ -1,4 +1,4 @@
-import {Blue, Green, Red} from './index';
+import { Blue, Green, Red } from './index';
 
 const info = new Blue();
 const success = new Green();
