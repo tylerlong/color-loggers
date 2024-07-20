@@ -10,18 +10,18 @@
     "test": "ts-node src/test.ts"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
-    "eslint": "^8.37.0",
-    "eslint-config-alloy": "^4.9.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.7",
-    "sort-package-json": "^2.4.1",
-    "ts-node": "^10.9.1",
-    "ttpt": "^0.5.3",
-    "typescript": "^5.0.3",
+    "@types/node": "^20.14.11",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^9.7.0",
+    "eslint-config-alloy": "^5.1.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "sort-package-json": "^2.10.0",
+    "ts-node": "^10.9.2",
+    "ttpt": "^0.9.6",
+    "typescript": "^5.5.3",
     "yarn-upgrade-all": "^0.7.2"
   }
 }
