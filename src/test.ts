@@ -1,13 +1,15 @@
-import { Blue, Green, Red, Color } from './index';
+import { Blue, Green, Red, Color, Yellow } from './index';
 import Styles from './styles';
 
 const info = new Blue();
 const success = new Green();
 const error = new Red();
+const warn = new Yellow();
 
 info.log('This is an information.');
 success.log('Congratulations!');
 error.log('Something is wrong!');
+warn.log('Be careful!');
 
 const info2 = new Blue('👉');
 const success2 = new Green('🎉');

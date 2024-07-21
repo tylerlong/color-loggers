@@ -45,6 +45,12 @@ export class Red extends Color {
   }
 }
 
+export class Yellow extends Color {
+  public constructor(prefix: Prefix = '[Warn]:') {
+    super(Styles.FgYellow, prefix);
+  }
+}
+
 export class Black extends Color {
   public constructor(prefix: Prefix = '') {
     super(Styles.FgBlack, prefix);
