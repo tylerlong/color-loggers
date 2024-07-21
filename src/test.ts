@@ -1,4 +1,5 @@
-import { Blue, Green, Red } from './index';
+import { Blue, Green, Red, Color } from './index';
+import Styles from './styles';
 
 const info = new Blue();
 const success = new Green();
@@ -18,3 +19,8 @@ error2.log('Something is wrong!');
 
 const info3 = new Blue(() => `[${new Date()}]:`);
 info3.log('This is an information.');
+
+const info4 = new Color(Styles.FgWhite, '');
+info4.log('This is the last message.');
+info4.disable();
+info4.log('This message should not be displayed.');

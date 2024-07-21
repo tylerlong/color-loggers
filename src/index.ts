@@ -1,8 +1,11 @@
+import Styles from './styles';
+
 type Prefix = string | (() => string);
 
-class Color {
+export class Color {
   public color: string;
   public prefix: Prefix;
+  private disabled = false;
 
   public constructor(color: string, prefix: Prefix = '') {
     this.color = color;
@@ -10,28 +13,46 @@ class Color {
   }
 
   public log(message: string) {
-    let prefix = this.prefix;
-    if (prefix instanceof Function) {
-      prefix = prefix();
+    if (!this.disabled) {
+      let prefix = this.prefix;
+      if (prefix instanceof Function) {
+        prefix = prefix();
+      }
+      console.log([this.color, prefix, message, Styles.Reset].join(''));
     }
-    console.log(this.color, prefix, message, '\x1b[0m');
+  }
+
+  public disable() {
+    this.disabled = true;
   }
 }
 
 export class Blue extends Color {
   public constructor(prefix: Prefix = '[Info]:') {
-    super('\x1b[34m', prefix);
+    super(Styles.FgBlue, prefix);
   }
 }
 
 export class Green extends Color {
   public constructor(prefix: Prefix = '[Done]:') {
-    super('\x1b[32m', prefix);
+    super(Styles.FgGreen, prefix);
   }
 }
 
 export class Red extends Color {
   public constructor(prefix: Prefix = '[Error]:') {
-    super('\x1b[31m', prefix);
+    super(Styles.FgRed, prefix);
+  }
+}
+
+export class Black extends Color {
+  public constructor(prefix: Prefix = '') {
+    super(Styles.FgBlack, prefix);
+  }
+}
+
+export class White extends Color {
+  public constructor(prefix: Prefix = '') {
+    super(Styles.FgWhite, prefix);
   }
 }
