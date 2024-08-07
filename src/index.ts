@@ -28,25 +28,25 @@ export class Color {
 }
 
 export class Blue extends Color {
-  public constructor(prefix: Prefix = '[Info]:') {
+  public constructor(prefix: Prefix = '[Info]: ') {
     super(Styles.FgBlue, prefix);
   }
 }
 
 export class Green extends Color {
-  public constructor(prefix: Prefix = '[Done]:') {
+  public constructor(prefix: Prefix = '[Done]: ') {
     super(Styles.FgGreen, prefix);
   }
 }
 
 export class Red extends Color {
-  public constructor(prefix: Prefix = '[Error]:') {
+  public constructor(prefix: Prefix = '[Error]: ') {
     super(Styles.FgRed, prefix);
   }
 }
 
 export class Yellow extends Color {
-  public constructor(prefix: Prefix = '[Warn]:') {
+  public constructor(prefix: Prefix = '[Warn]: ') {
     super(Styles.FgYellow, prefix);
   }
 }

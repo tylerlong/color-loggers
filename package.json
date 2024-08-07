@@ -1,6 +1,6 @@
 {
   "name": "color-loggers",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,9 +10,9 @@
     "test": "ts-node src/test.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
+    "@types/node": "^22.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
     "eslint": "8.57.0",
     "eslint-config-alloy": "^5.1.2",
     "eslint-config-prettier": "^9.1.0",
@@ -20,9 +20,9 @@
     "prettier": "^3.3.3",
     "sort-package-json": "^2.10.0",
     "ts-node": "^10.9.2",
-    "ttpt": "^0.9.6",
-    "typescript": "^5.5.3",
-    "yarn-upgrade-all": "^0.7.2"
+    "ttpt": "^0.10.2",
+    "typescript": "^5.5.4",
+    "yarn-upgrade-all": "^0.7.4"
   },
   "yarn-upgrade-all": {
     "ignore": [
